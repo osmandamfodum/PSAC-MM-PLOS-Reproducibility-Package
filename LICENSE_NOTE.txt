@@ -1,0 +1,2 @@
+No explicit project-wide software or data license was found in the inspected source.
+Copyright remains with the author(s). Reuse is subject to the license selected by the repository owner and any third-party ROS/Gazebo dependencies.

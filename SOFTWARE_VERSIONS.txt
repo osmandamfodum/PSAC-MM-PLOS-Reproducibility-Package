@@ -1,0 +1,11 @@
+Ubuntu: 22.04.5 LTS
+ROS distribution: Humble
+Gazebo Classic: 11.10.2
+Nav2: 1.1.20
+rclpy: 3.3.21
+Python: 3.10.12
+pandas: 2.3.3
+NumPy: 1.26.4
+Matplotlib: 3.5.1
+
+Final analysis scripts additionally import only Python standard-library modules.

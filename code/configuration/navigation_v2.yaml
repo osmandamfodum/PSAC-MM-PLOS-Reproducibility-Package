@@ -1,0 +1,19 @@
+# Shared Navigation v2 policy. Pass to the agri_mission manager with --ros-args --params-file.
+agri_mission_manager:
+  ros__parameters:
+    map_boundary_margin_m: 0.75
+    localization_max_age_s: 3.0
+    localization_future_tolerance_s: 0.3
+    return_home_localization_wait_s: 2.0
+    localization_max_xy_variance: 0.5
+    localization_max_yaw_variance: 0.5
+    # Same-timestamp map TF must agree with AMCL within these diagnostic bounds.
+    localization_tf_amcl_max_distance_m: 0.5
+    localization_tf_amcl_max_yaw_rad: 0.5
+    home_planning_timeout_s: 10.0
+    max_return_home_attempts: 2
+    max_return_home_replans: 1
+    return_home_multistage: true
+    return_home_stage_distance_m: 5.0
+    dynamic_obstacle_observation_s: 2.0
+    min_replan_interval_s: 3.0

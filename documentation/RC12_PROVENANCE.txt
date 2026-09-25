@@ -1,0 +1,24 @@
+RELEASE CANDIDATE RC12
+======================
+
+Purpose:
+Correct treatment-radius invariant discovered during Paper2 qualification.
+
+Parent baseline:
+RC11_500HZ_PERF_ACCEPTED
+
+Parent archive SHA256:
+d67f1d72ba0b820485fd64cee3329e5adea5edbbcd5814f2a445759de3a8064a
+
+Source:
+FROZEN_RC11_500HZ_PERF_ACCEPTED/my_robot_description
+
+Planned RC12 change:
+After NavigateToPose cancellation triggered by treatment reach:
+- refresh/re-evaluate final target distance
+- do not declare target_reached if distance > 1.15 m
+- add final treatment invariant guard before treatment begins
+
+No treatment-radius increase is permitted.
+No Method P algorithm change is permitted.
+No AMCL/Nav2/safety threshold change is permitted.

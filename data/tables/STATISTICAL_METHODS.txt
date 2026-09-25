@@ -1,0 +1,37 @@
+PAPER 2 STATISTICAL REPORTING METHODS
+
+Independent experimental unit
+-----------------------------
+One benchmark run is treated as the independent experimental unit.
+Each scenario-method cell contains 10 independent runs, each with 3 targets.
+
+Target-success rate
+-------------------
+Point estimate:
+    total successful targets / total attempted targets
+Because every final run contains exactly 3 attempted targets, this is equivalent
+to the mean per-run target-success percentage.
+
+Uncertainty:
+    95% percentile bootstrap confidence interval obtained by resampling complete
+    runs with replacement (20,000 bootstrap samples). Targets are not resampled
+    independently.
+
+Important boundary case:
+    If all 10 observed runs have the same success percentage (for example all
+    100% or all 0%), the empirical run-cluster bootstrap interval is degenerate.
+    This means no between-run variation was observed in this campaign; it must
+    not be interpreted as proof of zero population uncertainty.
+
+Mission completion and return-home
+----------------------------------
+Wilson 95% confidence intervals on binary run-level outcomes.
+
+Continuous run-level metrics
+----------------------------
+Mean, sample SD, and 95% t-based confidence intervals across runs.
+
+Cross-paper comparison
+----------------------
+Paper 1 and Paper 2 are separate experimental campaigns. Differences are
+reported descriptively and are not interpreted as paired causal effects.
